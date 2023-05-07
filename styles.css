@@ -1,0 +1,153 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: background-color 1s, opacity 2s;
+}
+
+.slide h1, .slide h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 2s;
+    opacity: 0.3;
+    color: black;
+}
+
+.active {
+    opacity: 1;
+}
+
+
+.active h1, .active h2 {
+    opacity: 1;
+}
+
+
+
+.next {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.arrow.right {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(-45deg);
+    margin-left: 10px;
+}
+
+.next:hover {
+    background-color: #FF6B00;
+    transform: translateY(-2px);
+}
+
+.next:hover .arrow.right {
+    border-color: white;
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.circle.active {
+    background-color: #000;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: rotate(-45deg) translateY(0);
+    }
+    100% {
+        transform: rotate(-45deg) translateY(-4px);
+    }
+}
+
+.arrow.right:active {
+    border-color: #FF6B00;
+    transform: rotate(-45deg) translateY(4px);
+}
+
+.svg-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.svg-element {
+    position: absolute;
+}
+
+.svg-element:nth-child(1) {
+    top: 20%;
+    left: 30%;
+}
+
+.svg-element:nth-child(2) {
+    top: 40%;
+    left: 70%;
+}
+
+.color1 {
+    background-color: #1A1A1D; /* Dark grey */
+}
+
+.color2 {
+    background-color: #4A4A4D; /* Medium grey */
+}
+
+.color3 {
+    background-color: #22313F; /* Dark navy blue */
+}
+
+.color4 {
+    background-color: #63707A; /* Slate grey */
+}
+
+.color5 {
+    background-color: #616161; /* Dark grey */
+}
