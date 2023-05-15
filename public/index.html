@@ -8,16 +8,36 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script
 	type="module"
 	src="https://gradio.s3-us-west-2.amazonaws.com/3.28.0/gradio.js"
     ></script>
 </head>
 <body>
+    <div class="mobile-warning">
+            <h1 class="Mslide1-heading"> ∞ infinite canvas</h1>
+            <h1 class="Mslide1-heading-2">the first collaborative AI-powered canvas</h1>
+    
+        <div class="Mimage-container slide1-image">
+            <img src="assets/title.png" alt="ai generated image" class="centered-image image1">
+        </div>
+        <p class="Mslide1-p">please revisit on desktop for a proper experience</p>
+        <a href="https://stanno.us" class="Micon-link" target="_blank">
+            <i class="fas fa-house" style="color: #feffff;"></i>
+        </a>
+        <a href="https://candied-primula-8e4.notion.site/Infinitecanvas-formerly-Expressive-Data-97a2c9845ecc430182eb25eadb806790" target="_blank">
+            <img src="assets/notion.png" class="Mlogo-small" alt="Logo" /> 
+        </a>
+    </div>
     <div class="container">
-       
+        <a href="https://stanno.us" class="icon-link" target="_blank">
+            <i class="fas fa-house" style="color: #feffff;"></i>
+        </a>
+        <a href="https://candied-primula-8e4.notion.site/Infinitecanvas-formerly-Expressive-Data-97a2c9845ecc430182eb25eadb806790" target="_blank">
+            <img src="assets/notion.png" class="logo-small" alt="Logo" /> 
+        </a>
         <div class="slide color1 active" data-step="0">
-           
             <div class="welcome-container">
                 <h1 class="slide1-heading"> ∞ infinite canvas</h1>
                 <h1 class="slide1-heading-2">the first collaborative AI-powered canvas</h1>
@@ -28,38 +48,36 @@
             </div>
         </div>
         <div class="slide color2" data-step="1">
-            <h2 class="slide2-heading">This is an experimental AI-powered canvas</h2>
+            <h2 class="slide2-heading">A space designed for you to collaborate with others on growing an image</h2>
             <div class="image-container slide2-image">
                 <img src="assets/1.png" alt="ai generated image" class="image-container slide2-image">
             </div>
            
-            <h4 class="slide2min">A space designed for you to collaborate with others in growing an image</h4>
+            <!-- <h4 class="slide2min">This experimental AI project is powered by stable diffusion and hugging face</h4> -->
+            <h4 class="slide2min">think of it as an online graffiti wall - composed by people from around the world. simply describe what you want to see next.</h4>
         
         </div>
         <div class="slide color3" data-step="2">
-            <h2 class="slide3-heading">move the box to any corner of the image and describe how you want it to grow</h2>
+            <h2 class="slide3-heading">move the box to any corner of the image and describe how you want to expand it</h2>
             <div class="image-container slide3-image">
                 <img src="assets/2.png" alt="ai generated image" class="centered-image">
             </div>
-            <h4 class="slide3min">make sure to overlap with the existing image in order to keep the things blended</h4>
+            <h4 class="slide3min">make sure to overlap with the existing image to help keep things blended</h4>
         
         </div>
         <div class="slide color4" data-step="3">
-            <h2 class="slide4-heading">some more things</h2>
+            <h2 class="slide4-heading">think creatively - the more detailed your description the better the results</h2>
            
             <div class="image-container slide4-image">
                 <img src="assets/3.png" alt="ai generated image" class="centered-image">
             </div>
-            <h2 class="slide4min">Step 3: Instructions</h2>
+            <h2 class="slide4min">this experimental project is powered by stable diffusion and hosted with hugging face. it aims to explore the crossroads of AI and creative collaboration. infinitecanvas is still in beta - some features may be inactive.</h2>
         
         </div>
         <div class="slide color5" data-step="4">
-            <h2 class="slide5min">lets go</h2>
-
-
-        <gradio-app src="https://stanno-capstone.hf.space"></gradio-app>
-
-            
+            <div class="slide5">
+                <gradio-app src="https://stanno-capstone.hf.space"></gradio-app>
+             </div>
         </div>
         
         <div class="progress-bar">

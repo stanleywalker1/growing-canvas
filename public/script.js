@@ -23,6 +23,10 @@ $(".next").on("click", function() {
         let nextIndex = (currentIndex + 1) % colorClasses.length;
         current.removeClass(colorClasses[currentIndex]).addClass(colorClasses[nextIndex]);
 
+        if (!current.hasClass("no-opacity-transition")) {
+          current.removeClass("active");
+      }
+
         current.removeClass("active");
         next.addClass("active");
 
